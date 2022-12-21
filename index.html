@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Running Calculator</title>
+  </head>
+  <body">
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+      <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+        <a
+          href="#"
+          class="d-flex align-items-center text-dark text-decoration-none"
+        >
+          <i class="fa-solid fa-person-running fa-2xl me-1"></i>
+          <span class="fs-4">My Running Calculator</span>
+        </a>
+      </header>
+
+      <main>
+        <h1>Ace your next race!</h1>
+        <p class="fs-5 col-md-8">
+          Quickly and easily calculate your split time to achieve your goal.
+        </p>
+
+        <p class="fs-5 inlineBlock" >My goal is to run</p>
+
+        <div class="dropdown inlineBlock">
+          <button
+            class="btn btn-secondary dropdown-toggle mb-1 distance"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Distance
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item halfMarathon" href="#">A half marathon</a></li>
+            <li><a class="dropdown-item marathon" href="#">A marathon</a></li>
+            <div class="dropdown-item">
+              <input style="width: 3rem" class="customDistance" type="number" name="" id="" min="1" />
+              <select id="" class="distanceUnit">
+                <option value="km">km.</option>
+                <option value="mi">mi.</option>
+              </select>
+            </div>
+          </ul>
+        </div>
+
+        <p class="fs-5 inlineBlock">in</p>
+
+        <div class="dropdown inlineBlock">
+          <button
+            class="btn btn-secondary dropdown-toggle mb-1 time"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Time
+          </button>
+          <ul class="dropdown-menu" style="width: 3rem">
+            <div class="dropdown-item">
+              <input style="width: 3rem" class="timeHours" type="number" name="" id="" min="0" />
+              <label for="" style="width: .1rem">hours</label>
+            </div>
+            <div class="dropdown-item">
+                <input style="width: 3rem" class="timeMinutes" type="number" name="" id="" min="0"/>
+                <label for="" style="width: .1rem">minutes</label>
+              </div>
+          </ul>
+        </div>
+        
+        <br />
+        <br />
+
+        <div class="mb-5">
+          <button type="button" class="btn btn-primary btn-lg px-4" return="false">Calculate</button>
+        </div>
+
+        <p class="fs-5 split inlineBlock hidden">You need to maintain x minutes and x seconds per </p>
+        <button
+            class="btn btn-secondary dropdown-toggle mb-1 splitUnit hidden"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            km
+          </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item splitUnitItem" href="#">mi</a></li>
+        </ul>
+      
+        <hr class="col-3 col-md-2 mb-5" />
+
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h2>Show km split time here</h2>
+            <p>@ToDo</p>
+            <p>Allow them to change certain splits</p>
+          </div>
+
+          <div class="col-md-6">
+            <h2>Running Guides</h2>
+            <p>
+              Links to sponsors!
+            </p>
+            <ul class="icon-list ps-0">
+              <li class="d-flex align-items-start mb-1">
+                <a href="#"
+                  >Who is gonna carry the boat</a
+                >
+              </li>
+              <li class="d-flex align-items-start mb-1">
+                <a href="#"
+                  >Stay Hard!!</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <footer class="pt-5 my-5 text-muted border-top">
+        Created by Bakkar and the pigeons &middot; &copy; 2022
+      </footer>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4bebe612f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

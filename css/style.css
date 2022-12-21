@@ -1,0 +1,11 @@
+.inlineBlock{
+   display: inline-block; 
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.error{
+    color: red;
+}
